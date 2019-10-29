@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+  <html>
+    <head></head>
+    <body>
+      <h1>Create a Team and Heroes!</h1>
+      <form action="/teams" method="POST">
+        <h2>CREATE YOUR TEAM</h2>
+        <label for="team[name]">Team Name:</label>
+        <input type="text" name="team[name]"><br>
+        <label for="team[motto]">Team Motto:</label>
+        <input type="text" name="team[motto]"><br>
+        <br>
+        <h2>CREATE YOUR FIRST HERO</h2>
+        <label for="team[members][][name]">Hero Name:</label>
+        <input id="member1_name" type="text" name="team[members][][name]"><br>
+        <label for="team[members][][power]">Hero POWER:</label>
+        <input id="member1_power" type="text" name="team[members][][power]"><br>
+        <label for="team[members][][bio]">Hero BIO:</label>
+        <input id="member1_bio" type="text" name="team[members][][bio]"><br>
+        <br>
+        <h2>CREATE YOUR SECOND HERO</h2>
+        <label for="team[members][][name]">Hero Name:</label>
+        <input id="member2_name" type="text" name="team[members][][name]"><br>
+        <label for="team[members][][power]">Hero POWER:</label>
+        <input id="member2_power" type="text" name="team[members][][power]"><br>
+        <label for="team[members][][bio]">Hero BIO:</label>
+        <input id="member2_bio" type="text" name="team[members][][bio]"><br>
+        <br>
+        <h2>CREATE YOUR THIRD HERO</h2>
+        <label for="team[members][][name]">Hero Name:</label>
+        <input id="member3_name" type="text" name="team[members][][name]"><br>
+        <label for="team[members][][power]">Hero POWER:</label>
+        <input id="member3_power" type="text" name="team[members][][power]"><br>
+        <label for="team[members][][bio]">Hero BIO:</label>
+        <input id="member3_bio" type="text" name="team[members][][bio]"><br>
+        <br>
+        <input type="submit" value="submit">
+
+      </form>
+    </body>
+  </html
