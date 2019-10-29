@@ -9,7 +9,9 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-       @team = params[:team]
+        temp = params[:team][:members].map{|attrb| SuperHero.new(attrb)}
+       @team = Team.new(name: params[:team][:name], motto: params[:team][:motto], members: temp)
+
        erb :team
     end
 
