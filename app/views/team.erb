@@ -1,3 +1,13 @@
 
 
 
+
+<h1>Team <%=@param[:team][:name]%></h1>
+<h1>Team Motto: <%=@param[:team][:motto]%></h1>
+
+<% 1.upto(3) do |i| %>
+  <h1>Hero Name: <%=@param["member#{i}_name"]%></h1>
+  <h1>Hero Power: <%=@param["member#{i}_power"]%></h1>
+  <h1>Hero Biography: <%=@param["member#{i}_bio"]%></h1>
+<% end %>
+
