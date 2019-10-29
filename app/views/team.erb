@@ -1,3 +1,23 @@
+<!DOCTYPE html>
+  <html>
+    <head></head>
+    <body>
+      <h1><%= params["team"]["name"] %></h1>
+      <h2>Team Motto: <%= params["team"]["motto"] %></h2>
 
+      <h2>Hero Name: <%= params["team"]["members"][0]["name"] %></h2>
+      <h4>Hero Power: <%= params["team"]["members"][0]["power"] %></h4>
+      <h4>Hero Biography: <%= params["team"]["members"][0]["bio"] %></h4>
+
+      <h2>Hero Name: <%= params["team"]["members"][1]["name"] %></h2>
+      <h4>Hero Power: <%= params["team"]["members"][1]["power"] %></h4>
+      <h4>Hero Biography: <%= params["team"]["members"][1]["bio"] %></h4>
+
+      <h2>Hero Name: <%= params["team"]["members"][2]["name"] %></h2>
+      <h4>Hero Power: <%= params["team"]["members"][2]["power"] %></h4>
+      <h4>Hero Biography: <%= params["team"]["members"][2]["bio"] %></h4>
+
+    </body>
+  </html>
 
 
